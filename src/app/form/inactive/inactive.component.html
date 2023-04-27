@@ -1,0 +1,7 @@
+<h3>Lista Utenti Inactive</h3>
+
+<ul class="list-group list-group-horizontal" *ngFor="let utente of listaInactive; let i = index">
+  <li class="list-group-item flex-fill">{{utente.username}}</li>
+  <li class="list-group-item"><button class="btn btn-primary" (click)="onModStatus('Active',i)">Set Active</button></li>
+  <li class="list-group-item"><span class="text-success">{{utente.countActive}}</span>/<span class="text-danger">{{utente.countInactive}}</span></li>
+</ul>

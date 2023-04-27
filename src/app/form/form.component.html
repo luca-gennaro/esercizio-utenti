@@ -1,0 +1,28 @@
+<div class="container mt-5">
+  <h1>Inserisci un utente</h1>
+
+  <div class="mb-3">
+    <label class="form-label">Username</label>
+    <input type="text"class="form-control" aria-describedby="helpId" [(ngModel)]="username">
+    <div class="mb-3">
+      <label for="" class="form-label">Seleziona Status</label>
+      <select class="form-select form-select-lg" name="" id="" [(ngModel)]="status">
+        <option selected>Select one</option>
+        <option value="Active">Active</option>
+        <option value="Inactive">Inactive</option>
+      </select>
+    </div>
+    <button class="btn btn-primary" type="submit" (click)="onAggiungiUtente()">Inserisci</button>
+  </div>
+</div>
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-6 d-flex justify-content-center">
+      <app-active></app-active>
+    </div>
+    <div class="col-md-6 d-flex justify-content-center">
+      <app-inactive></app-inactive>
+    </div>
+  </div>
+</div>
